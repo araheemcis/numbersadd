@@ -26,6 +26,4 @@ jobs:
           context: .
           push: true
           tags: |
-              "${{ github.repository }}:${{ github.ref_name }}"
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+              "${{ github.repository }}:${{ github.ref_name }}"    
